@@ -7,7 +7,7 @@
   <meta name="description" content="An interactive guide to the beam engine — steam, pressure, valves, linkages, and the machine that powered the Industrial Revolution.">
   <meta name="author" content="Gary Linscott">
   <link rel="icon" type="image/svg+xml" href="/beam-engine/favicon.svg">
-  <script type="module" crossorigin src="/beam-engine/assets/index-BECNXkmt.js"></script>
+  <script type="module" crossorigin src="/beam-engine/assets/index-CJF-GIxD.js"></script>
   <link rel="stylesheet" crossorigin href="/beam-engine/assets/index-DA5TADGm.css">
 </head>
 <body>
@@ -24,7 +24,7 @@
         <div class="figure-canvas"></div>
       </figure>
 
-      <p>This is a beam engine. Engines like this turned steam into the power that drove the Industrial Revolution. This article builds the engine up from first principles, using interactive figures to explore each idea (try <span class="hint-touch">rotating the engine above with two fingers, or pinching to zoom in</span><span class="hint-pointer">dragging the engine above, or zooming with ⌘/Ctrl + scroll</span>). Let's start our journey through the engine with steam.</p>
+      <p>This is a beam engine. It produced about fifteen horsepower continuously, roughly as much power as 150 people. Engines like this turned steam into the power that drove the Industrial Revolution. This article builds the engine up from first principles, using interactive figures to explore each idea (try <span class="hint-touch">rotating the engine above with two fingers, or pinching to zoom in</span><span class="hint-pointer">dragging the engine above, or zooming with ⌘/Ctrl + scroll</span>). Let's start our journey through the engine with steam.</p>
     </section>
 
     <section id="steam">
@@ -117,7 +117,7 @@
       <p>Why did Newcomen use the atmosphere to push the piston instead of the steam itself? His boiler was simply not strong enough. The <a href="https://collection.sciencemuseumgroup.org.uk/objects/co51483/haystack-boiler-1775-1799"><em>haystack boiler</em></a> produced only about a twentieth of an atmosphere above the surrounding air. It was built from thin copper or iron plates joined with rivets, and the wide walls and weak seams could not safely hold much pressure.</p>
 
       <aside class="sidenote">
-        <p>A boiler explosion is much more violent than the steam simply escaping through a hole. A large boiler contains tonnes of water heated above its ordinary boiling point. If the shell breaks, the pressure drops and part of that water instantly flashes into steam, releasing energy comparable to a hundred kilograms of gunpowder in a large mill boiler. Explosions killed workers throughout the nineteenth century, until insurers began inspecting the boilers they might later have to pay for. Their rules eventually grew into some of the oldest engineering safety codes still in use.</p>
+        <p>A boiler explosion is much more violent than the steam simply escaping through a hole. A large boiler contains tonnes of water heated above its ordinary boiling point. If the shell breaks, the pressure drops and part of that water instantly flashes into steam, releasing energy comparable to a hundred kilograms of gunpowder. Papin's safety valve should have prevented most explosions, but inquests kept finding valves screwed down, tied off, or loaded with extra weight by crews who wanted more power. In response, mill owners and insurance companies started requiring regular boiler inspections. After a boiler explosion levelled the Grover Shoe Factory in Massachusetts in 1905, killing fifty-eight people, those inspection rules grew into the ASME boiler code, one of the oldest engineering safety codes still in use.</p>
       </aside>
 
       <p><a href="https://en.wikipedia.org/wiki/James_Watt">James Watt</a>, who we will meet in the next section, used the <a href="https://collection.powerhouse.com.au/object/211502"><em>waggon boiler</em></a> shown below. Water sat in the broad chamber above the furnace, the hot gases passed underneath, and steam collected beneath the rounded roof.</p>
@@ -152,9 +152,15 @@
         <div class="figure-canvas"></div>
       </figure>
 
-      <p>At the end of the stroke, a valve opened and the steam rushed into the cold vessel, called the <em>condenser</em>. As the steam turned back into water, the pressure fell in the condenser and, through the connecting pipe, in the cylinder as well. This simple change cut coal consumption by about two thirds! Watt and his business partner <a href="https://en.wikipedia.org/wiki/Matthew_Boulton">Matthew Boulton</a> turned the saving into a business model, charging customers one third of the money they saved on coal.</p>
+      <p>At the end of the stroke, a valve opened and the steam rushed into the cold vessel, called the <em>condenser</em>. As the steam turned back into water, the pressure fell in the condenser and, through the connecting pipe, in the cylinder as well. A small <em>air pump</em> driven by the engine drew out the condensed water, along with any air that had leaked in, on every stroke. Keeping the cylinder hot and the condenser cold cut coal consumption by about two thirds! Watt and his business partner <a href="https://en.wikipedia.org/wiki/Matthew_Boulton">Matthew Boulton</a> turned the saving into a business model, charging customers one third of the money they saved on coal.</p>
 
-      <p>Watt made another important change: he closed the top of the cylinder and used steam on both sides of the piston. Steam pushed down while the condenser lowered the pressure below; on the return stroke, the same thing happened in the opposite direction. This was the <em>double-acting</em> engine. It produced power in both directions, increasing the output of a cylinder and making the engine much better suited to driving machinery. But getting steam in and out of the cylinder was now more complicated. One end had to connect to the boiler while the other connected to the exhaust, and then the two connections had to switch before the piston returned.</p>
+      <p>Better tools for making precise cylinders allowed Watt to make another important change: he closed the top of the cylinder and used steam on both sides of the piston. Steam pushed down while the condenser lowered the pressure below; on the return stroke, the same thing happened in the opposite direction. This was the <em>double-acting</em> engine. Below, we can compare it with the single-acting cylinder it replaced.</p>
+
+      <figure class="interactive" data-figure="double-acting">
+        <div class="figure-canvas"></div>
+      </figure>
+
+      <p>The same cylinder now produced power on both strokes, and the steady push-pull made the engine much better suited to driving machinery. But getting steam in and out of the cylinder was now more complicated. One end had to connect to the boiler while the other connected to the exhaust, and then the two connections had to switch before the piston returned.</p>
     </section>
 
     <section id="slide-valve">
@@ -204,11 +210,15 @@
     <section id="rotation">
       <h2>Making rotation</h2>
 
-      <p>To turn the piston's back-and-forth motion into rotation, our beam engine uses a <em>crank</em>, although Watt's first rotating engines could not use one.<sup class="footnote-ref" id="fnref-8"><a href="#fn-8">8</a></sup> A pin offset from the centre of the shaft is joined to the piston by a <em>connecting rod</em>. Twice per revolution, however, the crank and connecting rod line up. At these positions, called <em>dead centres</em>, the piston pushes straight through the shaft and produces no rotation at all. The large <em>flywheel</em> stores energy while the crank has good leverage, then returns that energy to carry the shaft through the dead centres. A heavier wheel changes speed less, giving the engine a smooth and steady rotation.</p>
+      <p>To turn the piston's back-and-forth motion into rotation, our beam engine uses a <em>crank</em>, although Watt's first rotating engines could not use one.<sup class="footnote-ref" id="fnref-8"><a href="#fn-8">8</a></sup> A pin offset from the centre of the shaft is joined to the piston by a <em>connecting rod</em>. The push on the pin turns the shaft, but not equally through the revolution. Twice per turn the crank and connecting rod line up, at positions called <em>dead centres</em>, where the piston pushes straight through the shaft and produces no rotation at all. With nothing to carry it past these points, the engine would stop the first time the crank reached one.</p>
+
+      <p>The large <em>flywheel</em> is the cure. It stores energy while the crank has good leverage, then returns that energy to keep the engine spinning past the dead centres. In the figure below, the shaded band in the inset shows the flywheel collecting and repaying energy through each revolution. Try the flywheel mass slider: a heavier wheel changes speed less, giving the engine a smooth and steady rotation.</p>
 
       <figure class="interactive" data-figure="crank-torque">
         <div class="figure-canvas"></div>
       </figure>
+
+      <p>Our engine can now turn a shaft without stopping. But joining the piston rod to the crank turns out to be harder than it looks.</p>
     </section>
 
     <section id="parallel-motion">
@@ -300,7 +310,7 @@
     <section id="whole-machine">
       <h2>The whole machine</h2>
 
-      <p>Let's return to the complete engine from the beginning of the article. Steam leaves the boiler, passes through the steam cock controlled by the governor and fills the steam chest. The eccentric moves the slide valve ahead of the piston, sending steam to one end of the cylinder while the other end exhausts. The piston rocks the beam, the parallel motion keeps the piston rod straight, and the connecting rod turns the crank and flywheel. The flywheel drives the eccentric and governor, while the far end of the beam operates the feed pump.</p>
+      <p>Let's return to the complete engine from the beginning of the article. Every mechanism we studied on its own is here, running in its place. The figure follows the power once along its whole path, from the boiler steam to the belt that leaves for the mill.<sup class="footnote-ref" id="fnref-14"><a href="#fn-14">14</a></sup></p>
 
       <figure class="interactive" data-figure="full-cycle">
         <div class="figure-canvas"></div>
@@ -310,7 +320,7 @@
     <section id="epilogue">
       <h2>Epilogue</h2>
 
-      <p>The beam engine was a product of the tools and science of its time. Watt used a beam and parallel motion partly because the workshops of the 1780s could not make long, accurate guides for a crosshead. As planing machines improved during the nineteenth century, those straight guides became practical. The heavy beam was no longer required, and by the 1860s most new mill engines drove the flywheel directly.<sup class="footnote-ref" id="fnref-14"><a href="#fn-14">14</a></sup></p>
+      <p>The beam engine was a product of the tools and science of its time. Watt used a beam and parallel motion partly because the workshops of the 1780s could not make long, accurate guides for a crosshead. As planing machines improved during the nineteenth century, those straight guides became practical. The heavy beam was no longer required, and by the 1860s most new mill engines drove the flywheel directly.<sup class="footnote-ref" id="fnref-15"><a href="#fn-15">15</a></sup></p>
 
       <p>Line shafts and leather belts outlived the beam engine, remaining above factory floors well into the twentieth century. Electric motors finally gave each machine its own source of rotation. Wires replaced the long shafts and belts, and stopping one lathe no longer changed the load on a central engine driving the entire mill.</p>
 
@@ -349,7 +359,8 @@
         <li id="fn-11"><p>Between 1775 and 1800, the Boulton &amp; Watt partnership built 496 engines. Thirty-eight percent were pumping engines, while sixty-two percent produced rotation, mostly for the textile industry. <a class="footnote-back" href="#fnref-11">&#8617;</a></p></li>
         <li id="fn-12"><p>In 1788, Boulton told Watt that he had seen spinning balls used to regulate millstones in Manchester. Watt adapted the mechanism to steam engines, but never patented the borrowed idea. <a class="footnote-back" href="#fnref-12">&#8617;</a></p></li>
         <li id="fn-13"><p>The height of the balls gives a surprisingly direct measurement of speed. Balancing their outward motion against gravity gives <em>h</em> = <em>g</em>/<em>&omega;</em><sup>2</sup>, where <em>h</em> is the vertical distance below the hinge. The mass cancels, so heavier balls push harder on the linkage but rise to the same height. At the crankshaft's speed the arms would need to be about a metre long, so the bevel gears spin the governor faster and let it fit on the short pillar. <a class="footnote-back" href="#fnref-13">&#8617;</a></p></li>
-        <li id="fn-14"><p>American paddle steamers kept the beam engine into the 1880s, mounting a <em>walking beam</em> high above the deck. Their paddle wheels needed high torque at only about twenty revolutions per minute, and a shallow riverboat had more room above the water than below it. Ocean-going ships folded similar machinery into the hull, then moved to smaller and faster engines as the screw propeller replaced the paddle wheel. <a class="footnote-back" href="#fnref-14">&#8617;</a></p></li>
+        <li id="fn-14"><p>The oldest rotative engine still in existence, installed at <a href="https://collection.powerhouse.com.au/object/7177">Whitbread's brewery</a> in London in 1785, is built to the same pattern as ours. Its cylinder was 64 centimetres across and the piston swept 1.8 metres on each stroke, a column of steam taller than a person. The flywheel, 4.3 metres across, turned twenty times a minute — a leisurely one revolution every three seconds — burning roughly forty kilograms of coal an hour. Watt rated it at ten horsepower, and it replaced the wheel of horses that had driven the brewery's mills. When it was converted to double action in 1795, the same cylinder was re-rated to fifteen horsepower; the brewery declined twenty, because Boulton &amp; Watt's annual fee rose with the power. It stayed at work for a hundred and two years. <a class="footnote-back" href="#fnref-14">&#8617;</a></p></li>
+        <li id="fn-15"><p>American paddle steamers kept the beam engine into the 1880s, mounting a <em>walking beam</em> high above the deck. Their paddle wheels needed high torque at only about twenty revolutions per minute, and a shallow riverboat had more room above the water than below it. Ocean-going ships folded similar machinery into the hull, then moved to smaller and faster engines as the screw propeller replaced the paddle wheel. <a class="footnote-back" href="#fnref-15">&#8617;</a></p></li>
       </ol>
     </section>
 
